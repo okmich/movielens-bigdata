@@ -31,7 +31,7 @@ See the options:
 	spark-submit --master local[*] --class MovieTagsApp ./target/scala-2.10/movielens-latest_2.10-1.0.jar hdfs://localhost:9000/user/hadmin/rawdata/movielens/latest hdfs://localhost:9000/user/hadmin/solution/movielens/lt/txt text
 
 #####Running MovieRatingsApp for output in parquet format
-spark-submit --master local[*] --class MovieRatingsApp ,/target/scala-2.10/movielens-latest_2.10-1.0.jar hdfs://localhost:9000/user/hadmin/rawdata/movielens/latest hdfs://localhost:9000/user/hadmin/solution/movielens/lt/pakey parquet
+	spark-submit --master local[*] --class MovieRatingsApp ,/target/scala-2.10/movielens-latest_2.10-1.0.jar hdfs://localhost:9000/user/hadmin/rawdata/movielens/latest hdfs://localhost:9000/user/hadmin/solution/movielens/lt/pakey parquet
 
 #####Running MovieTagsApp for output in parquet format
-spark-submit --master local[*] --class MovieTagsApp ./target/scala-2.10/movielens-latest_2.10-1.0.jar hdfs://localhost:9000/user/hadmin/rawdata/movielens/latest hdfs://localhost:9000/user/hadmin/solution/movielens/lt/pakey parquet
+	spark-submit --master local[*] --class MovieTagsApp ./target/scala-2.10/movielens-latest_2.10-1.0.jar hdfs://localhost:9000/user/hadmin/rawdata/movielens/latest hdfs://localhost:9000/user/hadmin/solution/movielens/lt/pakey parquet
